@@ -11,6 +11,11 @@
 		6DD5ED5A25FE8F14006D7259 /* LoginPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD5ED5525FE8F14006D7259 /* LoginPageViewModel.swift */; };
 		6DD5ED5B25FE8F14006D7259 /* LoginPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD5ED5625FE8F14006D7259 /* LoginPageRouter.swift */; };
 		6DD5ED5C25FE8F14006D7259 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD5ED5725FE8F14006D7259 /* UserData.swift */; };
+		6DD5ED7325FEA23D006D7259 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD5ED7225FEA23D006D7259 /* ViewModelProtocol.swift */; };
+		6DD5ED7725FEA289006D7259 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD5ED7625FEA289006D7259 /* RouterProtocol.swift */; };
+		6DD5ED7D25FEA32D006D7259 /* CoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD5ED7C25FEA32D006D7259 /* CoreViewController.swift */; };
+		6DD5ED8125FEA591006D7259 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD5ED8025FEA591006D7259 /* LoginModel.swift */; };
+		6DD5ED9525FEAB7D006D7259 /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD5ED9425FEAB7D006D7259 /* UICoordinator.swift */; };
 		AA4247B525FB10B4005E2468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4247B425FB10B4005E2468 /* AppDelegate.swift */; };
 		AA4247B725FB10B4005E2468 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4247B625FB10B4005E2468 /* SceneDelegate.swift */; };
 		AA4247B925FB10B4005E2468 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4247B825FB10B4005E2468 /* ViewController.swift */; };
@@ -20,11 +25,30 @@
 		AE089D440A1E9A45D24C2437 /* Pods_ubiquitous_system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBC4AE1FA1DED6F392049E1 /* Pods_ubiquitous_system.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		6DD5EDA925FEAD57006D7259 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" …\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
 		6DD5ED5325FE8F14006D7259 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		6DD5ED5525FE8F14006D7259 /* LoginPageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewModel.swift; sourceTree = "<group>"; };
 		6DD5ED5625FE8F14006D7259 /* LoginPageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageRouter.swift; sourceTree = "<group>"; };
 		6DD5ED5725FE8F14006D7259 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		6DD5ED7225FEA23D006D7259 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		6DD5ED7625FEA289006D7259 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		6DD5ED7C25FEA32D006D7259 /* CoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreViewController.swift; path = "/Users/jonathanho/ubiquitous-system/ios/ubiquitous system/ubiquitous system/CoreViewController.swift"; sourceTree = "<absolute>"; };
+		6DD5ED8025FEA591006D7259 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		6DD5ED9425FEAB7D006D7259 /* UICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
 		7FAEE8CD65177825F6F3F0BD /* Pods-ubiquitous system.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ubiquitous system.debug.xcconfig"; path = "Target Support Files/Pods-ubiquitous system/Pods-ubiquitous system.debug.xcconfig"; sourceTree = "<group>"; };
 		9ED68F6441F942C534208F65 /* Pods-ubiquitous system.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ubiquitous system.release.xcconfig"; path = "Target Support Files/Pods-ubiquitous system/Pods-ubiquitous system.release.xcconfig"; sourceTree = "<group>"; };
 		AA4247B125FB10B4005E2468 /* ubiquitous system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ubiquitous system.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,11 +85,23 @@
 		6DD5ED5E25FE8F3D006D7259 /* login_page */ = {
 			isa = PBXGroup;
 			children = (
+				6DD5ED8025FEA591006D7259 /* LoginModel.swift */,
 				6DD5ED5525FE8F14006D7259 /* LoginPageViewModel.swift */,
 				6DD5ED5625FE8F14006D7259 /* LoginPageRouter.swift */,
 				6DD5ED5325FE8F14006D7259 /* LoginPageViewController.swift */,
 			);
 			name = login_page;
+			sourceTree = "<group>";
+		};
+		6DD5ED7125FEA220006D7259 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				6DD5ED7225FEA23D006D7259 /* ViewModelProtocol.swift */,
+				6DD5ED7C25FEA32D006D7259 /* CoreViewController.swift */,
+				6DD5ED7625FEA289006D7259 /* RouterProtocol.swift */,
+				6DD5ED9425FEAB7D006D7259 /* UICoordinator.swift */,
+			);
+			name = core;
 			sourceTree = "<group>";
 		};
 		A1C5CA0D89EFC1CC66F25556 /* Pods */ = {
@@ -98,6 +134,7 @@
 		AA4247B325FB10B4005E2468 /* ubiquitous system */ = {
 			isa = PBXGroup;
 			children = (
+				6DD5ED7125FEA220006D7259 /* core */,
 				6DD5ED5E25FE8F3D006D7259 /* login_page */,
 				6DD5ED5725FE8F14006D7259 /* UserData.swift */,
 				AA4247B425FB10B4005E2468 /* AppDelegate.swift */,
@@ -125,6 +162,7 @@
 				736B07D8FC78D8D1A9213DD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
+				6DD5EDA925FEAD57006D7259 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -226,9 +264,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA4247B925FB10B4005E2468 /* ViewController.swift in Sources */,
+				6DD5ED7725FEA289006D7259 /* RouterProtocol.swift in Sources */,
 				6DD5ED5A25FE8F14006D7259 /* LoginPageViewModel.swift in Sources */,
+				6DD5ED8125FEA591006D7259 /* LoginModel.swift in Sources */,
+				6DD5ED9525FEAB7D006D7259 /* UICoordinator.swift in Sources */,
+				6DD5ED7325FEA23D006D7259 /* ViewModelProtocol.swift in Sources */,
 				6DD5ED5C25FE8F14006D7259 /* UserData.swift in Sources */,
 				6DD5ED5825FE8F14006D7259 /* LoginPageViewController.swift in Sources */,
+				6DD5ED7D25FEA32D006D7259 /* CoreViewController.swift in Sources */,
 				6DD5ED5B25FE8F14006D7259 /* LoginPageRouter.swift in Sources */,
 				AA4247B525FB10B4005E2468 /* AppDelegate.swift in Sources */,
 				AA4247B725FB10B4005E2468 /* SceneDelegate.swift in Sources */,

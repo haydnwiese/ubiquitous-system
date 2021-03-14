@@ -45,12 +45,24 @@ PODS:
   - nanopb/decode (2.30907.0)
   - nanopb/encode (2.30907.0)
   - PromisesObjC (1.2.12)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - SwiftGen (6.4.0)
   - SwiftyJSON (5.0.0)
+  - Unbox (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - Firebase/Auth
+  - RxCocoa (= 6.1.0)
+  - RxSwift (= 6.1.0)
+  - SwiftGen (~> 6.0)
   - SwiftyJSON
+  - Unbox
 
 SPEC REPOS:
   trunk:
@@ -64,7 +76,12 @@ SPEC REPOS:
     - GTMSessionFetcher
     - nanopb
     - PromisesObjC
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftGen
     - SwiftyJSON
+    - Unbox
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
@@ -77,8 +94,13 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Unbox: d2677af8fde59a30141e02981b11cb6a0e3b6bc5
 
-PODFILE CHECKSUM: 87ec12605c16d00116fcfb6fb2182f393116a579
+PODFILE CHECKSUM: 31b7a901fda6cd3a7099eb0a1a71a59127b22038
 
 COCOAPODS: 1.8.4

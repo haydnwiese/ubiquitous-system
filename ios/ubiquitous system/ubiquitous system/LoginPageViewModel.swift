@@ -6,3 +6,20 @@
 //
 
 import Foundation
+import RxRelay
+import RxSwift
+
+protocol LoginPageViewModelProtocol: CoreViewModel {
+}
+
+class LoginPageViewModel: LoginPageViewModelProtocol {
+
+    
+    let router: CoreRouter
+    
+    init(with router: CoreRouter) {
+        self.router = router
+        
+        
+    }
+}

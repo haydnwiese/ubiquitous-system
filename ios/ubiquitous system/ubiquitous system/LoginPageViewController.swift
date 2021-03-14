@@ -6,17 +6,21 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class LoginPageViewController: ViewController, UITextFieldDelegate {
-
+class LoginPageViewController: ViewController, CoreViewController {
+    
+    private let disposeBag = DisposeBag();
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
+    
+    var viewModel: LoginPageViewModelProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
 
@@ -34,5 +38,8 @@ class LoginPageViewController: ViewController, UITextFieldDelegate {
         //check that th response is good
         // interactor login
     }
+    
+    // MARK: - TextField
+    
     
 }
