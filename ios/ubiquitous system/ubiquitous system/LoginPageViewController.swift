@@ -22,6 +22,8 @@ class LoginPageViewController: ViewController, LoginPageViewInterface{
     @IBOutlet weak var signUpButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setToolbarHidden(true, animated: false);
+        self.navigationController?.setNavigationBarHidden(true, animated: false);
 
         // Do any additional setup after loading the view.
     }
