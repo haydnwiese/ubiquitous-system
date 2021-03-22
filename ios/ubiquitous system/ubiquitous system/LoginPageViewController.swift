@@ -6,8 +6,15 @@
 //
 
 import UIKit
+protocol LoginPageViewInterface {
+ 
+}
 
-class LoginPageViewController: ViewController, UITextFieldDelegate {
+
+class LoginPageViewController: ViewController, LoginPageViewInterface{
+    
+    var presenter: LoginPagePresenterInterface?
+    
 
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -18,21 +25,15 @@ class LoginPageViewController: ViewController, UITextFieldDelegate {
 
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func loginAction(_ sender: Any) {
         // send request
         //check that th response is good
         // interactor login
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        presenter?.onViewWillAppear();
     }
     
 }

@@ -8,7 +8,32 @@
 import Foundation
 import UIKit
 
-func presentFeedView() {
-    //present feed view
+protocol LoginPageRouterInterface {
+    
+}
+
+class LoginPageRouter: LoginPageRouterInterface {
+    var presenter:LoginPagePresenterInterface?
+    weak var navigationController:UINavigationController?
+    
+    static func createModule( navigationController: UINavigationController) -> LoginPageViewController{
+        let router = LoginPageRouter();
+        let presenter = LoginPagePresenter();
+        let interactor = LoginPageInteractor();
+        let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "loginPage") as! LoginPageViewController
+        
+        // connect layer
+        presenter.interactor = interactor;
+        presenter.router = router;
+        presenter.view = view;
+        view.presenter = presenter;
+        interactor.presenter = presenter
+        router.presenter = presenter;
+        router.navigationController = navigationController;
+        
+        return view;
+    }
+}
+extension LoginPageRouterInterface {
     
 }
