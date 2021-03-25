@@ -32,6 +32,8 @@ class LoginPageViewController: ViewController, LoginPageViewInterface{
         // send request
         //check that th response is good
         // interactor login
+        presenter?.userLoggedIn(username: userNameField.text, password: passwordField.text)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);

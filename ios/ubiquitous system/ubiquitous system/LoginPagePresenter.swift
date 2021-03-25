@@ -9,10 +9,10 @@ import Foundation
 
 protocol LoginPagePresenterInterface{
     func onViewWillAppear()
+    func userLoggedIn(username: String?, password: String?)
 }
 
 class LoginPagePresenter: LoginPagePresenterInterface{
-    
     
     var view: LoginPageViewController?
     var router: LoginPageRouterInterface?
@@ -21,5 +21,7 @@ class LoginPagePresenter: LoginPagePresenterInterface{
     func onViewWillAppear() {
         print("it works")
     }
-    
+    func userLoggedIn(username: String?, password: String?) {
+        interactor?.userLoggedIn(username: username, password: password)
+    }
 }

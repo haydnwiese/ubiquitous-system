@@ -34,6 +34,3 @@ class LoginPageRouter: LoginPageRouterInterface {
         return view;
     }
 }
-extension LoginPageRouterInterface {
-    
-}

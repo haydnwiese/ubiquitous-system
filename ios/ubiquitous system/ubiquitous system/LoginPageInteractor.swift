@@ -9,9 +9,15 @@ import Foundation
 
 
 protocol LoginPageInteractorInterface {
-    
+    func userLoggedIn(username: String?, password:String?)
 }
 
 class LoginPageInteractor: LoginPageInteractorInterface {
+    
+    
     var presenter:LoginPagePresenterInterface?
+    
+    func userLoggedIn(username: String?, password: String?) {
+        //TODO use network manager
+    }
 }
