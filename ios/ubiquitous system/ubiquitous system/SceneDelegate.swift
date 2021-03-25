@@ -43,9 +43,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        self.window?.rootViewController =  UINavigationController(rootViewController: rootVC)
 //                    self.window?.makeKeyAndVisible()
         
+        // TODO: CHECK HERE IF WE ARE SIGNED IN
+        
         let viewToShow = LoginPageRouter.createModule(navigationController: UINavigationController());
         self.window?.rootViewController =  UINavigationController(rootViewController: viewToShow)
         self.window?.makeKeyAndVisible()
+        
+        // IF SIGNED IN PRESENT FEED VIEW
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
